@@ -1,0 +1,59 @@
+.connect {
+    &__headline::before {
+        background: url(../images/ic-mail.png) center no-repeat, #fff;
+        margin-bottom: 31px;
+    }
+
+    &__subtitle {
+        margin: 12px 0 37px 0;
+    }
+}
+
+
+.form {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+
+    @include small {
+        max-width: 80%;
+    }
+
+    @include extrasmall {
+        max-width: 100%;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+
+        @include small {
+            display: block;
+        }
+    }
+
+    &__item {
+        width: 100%;
+        background: $aqua;
+        border: 1px solid $color-bord;
+        height: 43px;
+
+        &--ta {
+            margin: 32px 0 25px;
+            min-height: 125px;
+
+            @include medium {
+                margin: 22px 0 25px;
+            }
+        }
+
+        &--name {
+            margin-right: 30px;
+
+            @include small {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

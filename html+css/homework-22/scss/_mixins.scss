@@ -1,0 +1,47 @@
+@mixin triangle($triangle-color) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 11px 0 11px;
+    border-color: $triangle-color transparent transparent transparent;
+}
+
+
+@mixin extralarge {
+    @media screen and (max-width:1150px) {
+        @content
+    }
+}
+
+
+@mixin large {
+    @media screen and (max-width:960px) {
+        @content
+    }
+}
+
+
+@mixin medium {
+    @media screen and (max-width:780px) {
+        @content
+    }
+}
+
+
+@mixin small {
+    @media screen and (max-width:670px) {
+        @content
+    }
+}
+
+@mixin extrasmall {
+    @media screen and (max-width:576px) {
+        @content
+    }
+}
+
+@mixin extraextrasmall {
+    @media screen and (max-width:400px) {
+        @content
+    }
+}

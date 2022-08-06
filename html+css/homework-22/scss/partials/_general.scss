@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: $font-f;
+    background: $daqua;
+    font-size: 16px;
+    @include extralarge {
+        font-size: 15px;
+    };
+
+    @include large {
+        font-size: 14px;
+    };
+
+    @include medium {
+        font-size: 13px;
+    };
+    
+    @include extrasmall {
+        font-size: 12px;
+    };
+}
+
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+form,
+h1,
+h2,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

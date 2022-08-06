@@ -1,0 +1,99 @@
+.footer {
+    background: url(../images/bg.png);
+    padding: 68px 0 48px 21px;
+
+    @include medium {
+        padding: 68px 15px 48px;
+    }
+
+    %headline {
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+
+    %txt {
+        color: $dwhite;
+        font-size: 1em;
+        font-weight: 700;
+        line-height: 1.286;
+    }
+
+    .posts {
+        padding-right: 27px;
+
+        @include large {
+            margin-bottom: 20px;
+
+        }
+
+        @include medium {
+            padding-right: 0;
+        }
+
+        &__headline {
+            @extend %headline;
+        }
+
+        &__item {
+            display: block;
+            cursor: pointer;
+            border-bottom: 1px solid #3b3b3b;
+            padding: 18px 0 11px 0;
+            font-family: $font-b;
+            @extend %txt;
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+
+    .intent {
+        padding-right: 20px;
+
+        @include large {
+            margin-bottom: 20px;
+        }
+
+        @include medium {
+            padding-right: 0;
+        }
+
+        &__headline {
+            @extend %headline;
+            padding-bottom: 17px;
+        }
+
+        &__txt {
+            font-family: $font-h;
+            @extend %txt;
+        }
+
+        &_txt--pos {
+            padding-top: 18px;
+        }
+    }
+
+    .social-media {
+
+        &__headline {
+            @extend %headline;
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+
+
+            background: {
+                image: url("../images/icon.png");
+                repeat: no-repeat;
+            }
+        }
+
+        @include posIcon(20, 5px, 0, 0);
+
+    }
+}

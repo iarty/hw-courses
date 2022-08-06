@@ -1,0 +1,21 @@
+{
+  "name": "homework-75",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "yarn --cwd client/ start",
+    "dev": " concurrently \"yarn server\" \"yarn client\" "
+  },
+  "dependencies": {
+    "caesar-salad": "^2.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
+  }
+}

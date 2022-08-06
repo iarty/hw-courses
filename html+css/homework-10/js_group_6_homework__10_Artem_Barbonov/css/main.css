@@ -1,0 +1,261 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.wrapper {
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px 0;
+}
+
+/*list-1*/
+
+.list-1 {
+    padding: 50px 25px 112px 30.5%;
+    font-family: 'Raleway', sans-serif;
+    background: url(../images/iphone.jpg) left bottom no-repeat;
+}
+
+.list-1-headline {
+    font-weight: 600;
+    font-size: 30px;
+    color: #555555;
+    margin: 0;
+}
+
+.list-1-txt {
+    line-height: 1.75;
+    font-size: 16px;
+    color: #8c8c8c;
+    margin: 0;
+    margin-top: 19px;
+}
+
+.list-1-docket {
+    color: #8c8c8c;
+    font-size: 16px;
+    line-height: 2;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.list-1-docket>li {
+    padding-left: 60px;
+    position: relative;
+}
+
+.list-1-docket a {
+    color: #8c8c8c;
+}
+
+.list-1-docket>li::before {
+    content: "";
+    background: url(../images/sprites.png) left -2px no-repeat;
+    position: absolute;
+    width: 21px;
+    height: 23px;
+    top: 4px;
+    left: 11px;
+}
+
+/*list-2*/
+
+.list-2 {
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    font-family: 'Tahoma', serif;
+}
+
+.list-2-wrapper {
+    max-width: 304px;
+    padding: 0 27px 22px;
+}
+
+.list-2-headline {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-left: 31px;
+    position: relative;
+    padding-bottom: 11px;
+    margin-bottom: 0;
+    margin-top: 17px;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.list-2-headline::before {
+    content: "";
+    background: url(../images/sprites.png) 70% top no-repeat;
+    width: 23px;
+    height: 24px;
+    position: absolute;
+    top: 1px;
+    left: -1px;
+}
+
+.list-2-docket {
+    border-top: 1px solid #e0e0e0;
+    margin: 0;
+    padding-top: 13px;
+}
+
+.list-2-docket a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.list-2-docket dt {
+    position: relative;
+    padding-left: 18px;
+    padding-top: 7px;
+    margin-bottom: 2px;
+}
+
+.list-2-docket dt::before {
+    content: "";
+    background: url(../images/sprites.png) left bottom no-repeat;
+    position: absolute;
+    width: 17px;
+    height: 11px;
+    top: 12px;
+    left: -6px;
+}
+
+.list-2-docket dd {
+    margin-left: 18px;
+    margin-bottom: 6px;
+    line-height: 1.74;
+    color: #909090;
+    font-size: 12px;
+}
+
+/*list-3*/
+
+.list-3 {
+    max-width: 272px;
+    color: #414a5a;
+}
+
+.list-3-headline {
+    font-size: 26px;
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.list-3-docket {
+    margin: 0;
+    list-style-type: none;
+    line-height: 2.769;
+    font-size: 13px;
+    padding: 0;
+}
+
+.list-3-docket>li {
+    margin: 0;
+}
+
+.list-3-docket a {
+    color: #414a5a;
+    display: block;
+    position: relative;
+    padding-left: 25px;
+}
+
+.list-3-docket li a::before {
+    content: "";
+    position: absolute;
+    background: url(../images/sprites.png) 77% bottom no-repeat;
+    width: 13px;
+    height: 10px;
+    left: 2px;
+    top: 12px;
+}
+
+.list-3-docket a:hover {
+    color: #fff;
+    background: #485460;
+    border-radius: 3px;
+    padding-left: 38px;
+}
+
+.list-3-docket>li a:hover::before {
+    background: url(../images/sprites.png) right top no-repeat;
+    position: absolute;
+    width: 13px;
+    height: 10px;
+    left: 9px;
+    top: 14px;
+}
+
+/*list-4*/
+
+.list-4 {
+    font-family: "Tahoma";
+    font-size: 12px;
+    color: #1a1a1a;
+    line-height: 1.667;
+    letter-spacing: 1px;
+    word-spacing: -1px;
+    counter-reset: listCounter;
+}
+
+.list-4-wrapper {
+    max-width: 300px;
+}
+
+.list-4-txt {
+    margin: 0;
+}
+
+.list-4-docket {
+    margin: 0;
+    padding: 20px 0;
+    list-style-type: none;
+}
+
+.list-4-docket li {
+    padding-left: 37px;
+    position: relative;
+}
+
+.list-4-docket li::before {
+    counter-increment: listCounter;
+    content: counter(listCounter) " \2014";
+    position: absolute;
+    color: #a38f5d;
+    font-weight: bold;
+    font-size: 14px;
+    top: -3px;
+    left: 0;
+}
+
+.list-4-thatsall {
+    margin: 0;
+}
+
+.list-4-readmore {
+    color: #4d7842;
+    text-decoration: underline;
+    font-size: 12px;
+}

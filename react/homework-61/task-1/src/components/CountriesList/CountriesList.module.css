@@ -1,0 +1,8 @@
+.CountriesList {
+  padding: 10px;
+  height: 100vh;
+  overflow-y: scroll;
+  border: 2px solid #cecece;
+  width: 30%;
+  background: white;
+}

@@ -1,0 +1,79 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+.navbar {
+  background-color: rgb(161, 77, 77);
+  padding: 30px;
+  line-height: 50%;
+  list-style-type: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.navbar li {
+  padding-left: 15%;
+  display: inline;
+}
+
+table,
+td,
+th {
+  border-collapse: collapse;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+p {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.imgsize {
+  width: 600px;
+  height: 300px;
+}
+
+#form {
+  float: right;
+}
+
+#form fieldset {
+  width: 300px;
+}
+
+#form fieldset input {
+  float: right;
+}
+
+#price {
+  float: left;
+}
+
+footer {
+  clear: both;
+  height: 50px;
+  display: table;
+}
+
+footer .copyright {
+  font-size: 12px;
+  color: grey;
+  display: table-cell;
+  vertical-align: bottom;
+}

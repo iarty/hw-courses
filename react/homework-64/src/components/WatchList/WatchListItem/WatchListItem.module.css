@@ -1,0 +1,9 @@
+.WatchListItem {
+  display: flex;
+  max-width: 500px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  padding:15px 20px;
+}

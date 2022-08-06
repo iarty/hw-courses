@@ -1,0 +1,13 @@
+.CountryInfo {
+  border: 2px solid #cecece;
+  width: 65%;
+  padding: 15px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}

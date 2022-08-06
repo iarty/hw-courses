@@ -1,0 +1,9 @@
+export const DELETE_DISH = "DELETE_DISH";
+export const GET_DISHES_SUCCESS = "GET_DISHES_SUCCESS";
+export const EDIT_DISH = "EDIT_DISH";
+export const CREATE_DISH = "CREATE_DISH";
+export const SET_ERROR = "SET_ERROR";
+export const GET_ONE_DISH = "GET_ONE_DISH";
+export const SET_LOADING = "SET_LOADING";
+export const GET_ORDERS = "GET_ORDERS";
+export const DELETE_ORDER = "DELETE_ORDER";

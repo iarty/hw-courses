@@ -1,0 +1,24 @@
+.Button {
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+  padding: .7em 1.5em;
+  outline: none;
+  border-radius: 3px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.Button:active {
+  background-color: #c99957;
+  border-color: #c99957;
+
+}
+
+.Button:hover {
+  background-color: #f0c386;
+  border-color: #f0c386;
+}

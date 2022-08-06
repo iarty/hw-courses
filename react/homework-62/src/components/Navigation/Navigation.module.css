@@ -1,0 +1,39 @@
+.Navigation {
+  display: flex;
+  align-items: center;
+  background: #4285f4;
+  padding: 10px;
+}
+
+.Navigation ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.Navigation ul li a:hover:not(.active) {
+  color: rgb(195, 195, 195);
+}
+
+.Navigation ul li a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+
+.Navigation ul li {
+  list-style-type: none;
+  margin-left: 15px;
+}
+
+.logo {
+  margin: 5px 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.active {
+  background: rgba(255, 255, 255, .2)
+}

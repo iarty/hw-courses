@@ -1,0 +1,72 @@
+.cards {
+    @include medium {
+        background: $yellow;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+
+        @include small {
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: space-between;
+        }
+    }
+
+    &__item {
+        width: 90%;
+        background: $yellow-dark;
+        margin-bottom: 10px;
+
+        @include small {
+            width: 47.825%;
+            margin-bottom: 0;
+        }
+
+        @include medium {
+            width: 33.3333%;
+            margin-right: 15px;
+        }
+
+        &__txt {
+            line-height: 1.665;
+            font-size: 1.1em;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-left: 10px;
+            color: $white;
+
+            @include small {
+                padding: 10px 0px 0px 25px;
+                font-size: 20px;
+                margin: 0;
+            }
+
+            @include medium {
+                font-size: 24px;
+                line-height: 1.583;
+            }
+        }
+
+        &__img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &__headline {
+        @include medium {
+            font-size: 37px;
+            color: $white;
+            display: block;
+            font-weight: 400;
+            font-family: font-open;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+}

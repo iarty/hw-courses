@@ -1,0 +1,76 @@
+.advantages {
+    text-align: center;
+    background: url(../images/bg.png);
+
+    @include small {
+        padding-right: 60px;
+        padding-left: 20px;
+    }
+
+    @include medium {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    &__wrap {
+        @include small {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @include medium {
+            justify-content: space-around;
+        }
+    }
+
+    &__item {
+        font-size: 1em;
+        color: $black;
+        text-transform: uppercase;
+        margin: 0;
+
+        @include small {
+            font-size: 23px;
+        }
+
+        @include medium {
+            position: relative;
+            font-size: 27px;
+
+            &:after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 2px;
+                height: 211px;
+                background: #cfcfcf;
+                top: -40px;
+                right: -88px;
+            }
+
+            &:last-of-type:after {
+                width: 0;
+            }
+
+        }
+
+        &:last-child .advantages__icon {
+            transform: rotateY(180deg);
+        }
+    }
+
+    &__icon {
+        display: block;
+        font-size: 3em;
+        color: $yellow;
+        margin-bottom: 10px;
+
+        @include small {
+            font-size: 65px;
+        }
+
+        @include medium {
+            font-size: 90px;
+        }
+    }
+}

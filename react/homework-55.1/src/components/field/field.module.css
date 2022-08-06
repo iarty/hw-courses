@@ -1,0 +1,8 @@
+.field {
+  width: 480px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #fff;
+}

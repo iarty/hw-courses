@@ -1,0 +1,13 @@
+.CostsList {
+  background: rgb(255, 255, 255);
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  overflow-y: scroll;
+}
+
+.TotalPrice {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}

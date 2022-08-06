@@ -1,0 +1,57 @@
+.content {
+    color: $black;
+    border-bottom: 8px solid $red;
+    background: url(../images/bg-page.png);
+
+    &__wrap {
+        padding: percentage(55/960) 0 percentage(81/960) 36px;
+
+        @include medium {
+            justify-content: center;
+            padding-left: 0;
+        }
+    }
+
+    &__item {
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @include medium {
+            margin-bottom: 20px;
+            width: 80%;
+            margin-right: 0;
+
+        }
+
+        @include small {
+            width: 90%;
+        }
+    }
+
+    &__headline {
+        font-family: $font-b;
+        font-size: 1.286em;
+        padding-bottom: 20px;
+        color: $lblack;
+
+        @each $icon in gear,
+        user,
+        pen {
+            &--#{$icon}::before {
+                content: "";
+                background: url(../images/#{$icon}.png) 50% no-repeat,
+                $grey;
+                padding: 3px 0 3px 31px;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    &__txt {
+        font-size: 1em;
+        color: $lgrey;
+        line-height: 1.286;
+    }
+}

@@ -1,0 +1,508 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 15px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*form-1*/
+
+.form-1-wrap {
+    max-width: 328px;
+    background: #e9e6e6;
+    padding: 20px 30px;
+    margin: 50px auto;
+}
+
+.form-1 {
+    max-width: 267px;
+    border-radius: 3px;
+    background: #fff;
+    padding: 0 20px;
+}
+
+.form-1-headline {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #475965;
+    margin: 0;
+    padding: 21px 0 32px 0;
+    letter-spacing: .1px;
+}
+
+#username-form-1 {
+    border: 1px solid #959fa9;
+    margin-bottom: 17px;
+    width: 100%;
+    height: 35px;
+    padding: 0 0px 0 56px;
+    background: url(../images/sprites.png) 10px 0 no-repeat;
+    opacity: .6;
+}
+
+#username-form-1:focus {
+    opacity: 1;
+}
+
+#passwd-form-1 {
+    border: 1px solid #959fa9;
+    margin-bottom: 23px;
+    width: 100%;
+    height: 35px;
+    padding: 0 4px 0 56px;
+    background: url(../images/sprites.png) 10px -50px no-repeat;
+    opacity: .6;
+}
+
+#passwd-form-1:focus {
+    opacity: 1;
+}
+
+
+.form-1-btn {
+    display: block;
+    background: #21b8c6;
+    border: none;
+    cursor: pointer;
+    padding: 11px 85px;
+    border-radius: 3px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.form-1-btn:hover {
+    background: #27d1e0;
+}
+
+.form-1-btn:active {
+    box-shadow: inset 1px 1px 4px 0px #137d86;
+}
+
+.form-1-signup {
+    display: flex;
+    font-size: 12px;
+    color: #7d8e9a;
+    background: url(../images/sprites.png) 192px -247px no-repeat;
+    padding: 0 0 19px 21px;
+}
+
+.form-1-signup a {
+    display: block;
+    max-width: 75px;
+    color: #475965;
+    margin-left: 5px;
+}
+
+/*form-2*/
+
+.form-2 {
+    max-width: 337px;
+    border: 3px dotted #ffbe32;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+.form-2-headline {
+    font-size: 20px;
+    color: #474747;
+    margin: 15px 0 13px 0;
+    font-weight: normal;
+}
+
+.form-2 label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #505050;
+    margin-bottom: 7px;
+}
+
+.ls-form-2-label {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 7px;
+}
+
+.ls-form-2-label input:first-of-type {
+    height: 29px;
+    background: #fff7df;
+    border: 1px solid #fff7df;
+    margin-left: 19px;
+    max-width: 64px;
+    box-shadow: inset 1px 1px 0px 0px rgba(233, 206, 173, 0.7);
+}
+
+.ls-form-2-label input:nth-of-type(2) {
+    height: 29px;
+    background: #fff7df;
+    border: 1px solid #fff7df;
+    max-width: 44px;
+    margin-left: 10px;
+    box-shadow: inset 1px 1px 0px 0px rgba(233, 206, 173, 0.7);
+}
+
+.ls-form-2-label input:last-child {
+    height: 29px;
+    background: #fff7df;
+    border: 1px solid #fff7df;
+    margin-left: 7px;
+    max-width: 33px;
+    box-shadow: inset 1px 1px 0px 0px rgba(233, 206, 173, 0.7);
+}
+
+.minus {
+    font-weight: bold;
+    color: #a3a3a3;
+    margin-left: 4px;
+}
+
+#passwd-form-2 {
+    height: 29px;
+    background: #fff7df;
+    border: 1px solid #fff7df;
+    margin-left: 58px;
+    box-shadow: inset 1px 1px 0px 0px rgba(233, 206, 173, 0.7);
+    min-width: 184px;
+}
+
+.form-2-txt {
+    line-height: 1.333;
+    font-size: 12px;
+    color: #454545;
+    padding: 11px 0 15px 0;
+    margin: 15px 0 0 0;
+}
+
+.form-2-inner {
+    padding: 0 17px 0 19px;
+}
+
+.form-2-bg {
+    background: #f4f4f4;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.form-2-btn-wrap {
+    text-align: right;
+    margin-right: 7px;
+}
+
+.form-2-btn {
+    padding: 9px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: -0.515px -0.857px 0px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, rgba(255, 205, 133, 1) 0%, rgba(253, 94, 2, 1) 73%, rgba(253, 94, 2, 1) 100%);
+    box-shadow: inset 0px -1px 1px 0px rgba(255, 255, 255, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form-2-btn:hover {
+    background: linear-gradient(to bottom, rgb(255, 213, 155) 0%, rgba(253, 94, 2, 1) 73%, rgb(255, 120, 41) 100%);
+}
+
+.form-2-btn:active {
+    background: linear-gradient(to bottom, rgba(253, 94, 2, 1) 0%, rgba(253, 94, 2, 1) 73%, rgba(255, 205, 133, 1) 100%);
+    box-shadow: inset 0px 0px 5px 0px rgba(255, 255, 255, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form-2-forgot {
+    font-size: 11px;
+    margin-left: 9px;
+    color: #000;
+    text-decoration: underline;
+}
+
+/*form-3*/
+
+.form-3-bg {
+    background: #d9f1fa;
+}
+
+.form-3 {
+    font-family: Verdana,
+        "Geneva CY",
+        "DejaVu  Sans",
+        sans-serif;
+    max-width: 293px;
+    padding: 22px 27px;
+    margin: 50px auto;
+}
+
+.form-3-headline {
+    display: flex;
+    padding-top: 29px;
+    border-top: 1px dotted #6e797d;
+}
+
+.form-3-headline h5 {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+    color: #787878;
+    padding-left: 41px;
+    background: url(../images/sprites.png) 7px -95px no-repeat;
+}
+
+.form-3-headline h5 span {
+    font-weight: normal;
+}
+
+.form-3-headline a {
+    display: block;
+    font-size: 13px;
+    color: #1b6fb6;
+    padding: 2px 0 0 8px;
+    text-decoration: underline;
+}
+
+.form-3-inner {
+    margin: 14px 0px 0 41px;
+}
+
+.form-3-label {
+    font-weight: normal;
+    font-size: 11px;
+    color: #787878;
+}
+
+#name-form-3 {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), #ebebee;
+    border-radius: 3px;
+    border: none;
+    height: 18px;
+    width: 134px;
+    margin: 0 0 10px 11px;
+    box-shadow: inset 1px 1px 0px 0px rgba(0, 38, 68, 0.2), 0px 0px 1px 1px #fff, 0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+#name-form-3:focus {
+    border: 2px solid #fff;
+    border-radius: 3px;
+}
+
+#passwd-form-3 {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), #ebebee;
+    border-radius: 3px;
+    height: 18px;
+    border: none;
+    width: 134px;
+    margin: 0 0 9px 4px;
+    box-shadow: inset 1px 1px 0px 0px rgba(0, 38, 68, 0.2), 0px 0px 1px 1px #fff, 0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+#passwd-form-3:focus {
+    border: 2px solid #fff;
+    border-radius: 3px;
+}
+
+#checkbox-form-3 {
+    display: none;
+}
+
+.form-3-label-chkbox {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 11px;
+    color: #787878;
+    margin-left: 3px;
+    padding-left: 17px;
+    position: relative;
+}
+
+.form-3-label-chkbox:before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 15px;
+    background: url(../images/check.png) 0 0px no-repeat;
+    position: absolute;
+    top: 0;
+    left: -2px;
+}
+
+#checkbox-form-3:checked+.form-3-label-chkbox:before {
+    background-position: 0 100%;
+}
+
+.form-3-btn {
+    display: inline-block;
+    background: linear-gradient(to bottom, rgba(205, 206, 207, 0.4) 0%, rgba(118, 124, 133, 0.4) 100%), #227d62;
+    border: 1px solid #4e736f;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 24px;
+    padding: 3px 14px 5px 13px;
+    box-shadow: inset 0px 0px 2px 1px rgba(76, 150, 128, 1), 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+.form-3-btn:hover {
+    background: linear-gradient(to bottom, rgba(205, 206, 207, 0.4) 0%, rgba(118, 124, 133, 0.4) 100%), #2e9576;
+}
+
+.form-3-btn:active {
+    background: linear-gradient(to bottom, rgba(118, 124, 133, 0.4) 0%, rgba(205, 206, 207, 0.4) 100%), #2e9576;
+}
+
+.form-3-inner a {
+    display: block;
+    font-size: 11px;
+    text-decoration: underline;
+    color: #1b6fb6;
+    text-align: right;
+    margin: 11px 15px 7px 0;
+}
+
+/*form-4*/
+
+.form-4 {
+    max-width: 380px;
+    padding: 0 30px;
+    margin: 50px auto;
+}
+
+.form-4-inner {
+    padding: 0 20px;
+}
+
+.form-4-headline {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.417;
+    background: #c1cfd9;
+    height: 55px;
+    width: 100%;
+    line-height: 55px;
+    padding-left: 20px;
+    border: 1px solid #dae4eb;
+    margin: 50px 0 21px 0;
+    color: #fff;
+}
+
+#title-form-4 {
+    height: 33px;
+    width: 100%;
+    box-shadow: inset 1px 1px 3px 0px rgba(193, 207, 217, 0.35);
+    font-size: 18px;
+    padding-left: 5px;
+    border: 1px solid #dae4eb;
+}
+
+#title-form-4::placeholder {
+    color: #dae4eb;
+}
+
+.form-4-inner label {
+    display: block;
+    margin-top: 24px;
+    position: relative;
+    padding-left: 39px;
+    font-size: 14px;
+    color: #9eb2c0;
+}
+
+.form-4-inner label:first-of-type {
+    margin-top: 18px;
+}
+
+.form-4-inner input[type="checkbox"] {
+    display: none;
+}
+
+.form-4-inner label:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    box-shadow: inset 1px 1px 3px 0px rgba(193, 207, 217, 0.35);
+    border: 1px solid #dae4eb;
+    width: 29px;
+    height: 29px;
+    top: -6px;
+    left: 1px;
+}
+
+.form-4-inner input[type="checkbox"]:checked+label:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    box-shadow: inset 1px 1px 3px 0px rgba(193, 207, 217, 0.35);
+    border: 1px solid #dae4eb;
+    background: url(../images/sprites.png) 2px -195px no-repeat;
+    width: 29px;
+    height: 29px;
+    top: -6px;
+    left: 1px;
+}
+
+.btn-wrap {
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-save {
+    display: inline-block;
+    padding: 9px 19px 8px 19px;
+    background: #a8bd44;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn-save:hover {
+    background: #b5ca4b;
+}
+
+.btn-save:active {
+    box-shadow: inset 1px 1px 2px 1px #1fa552;
+
+}
+
+.btn-delete {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 9px 8px 8px 9px;
+    background: #f97e76;
+}
+
+.btn-delete:hover {
+    background: #ff8c83;
+}
+
+.btn-delete:active {
+    box-shadow: inset 1px 1px 2px 1px #8f4f4a;
+}

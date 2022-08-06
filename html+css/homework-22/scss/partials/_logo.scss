@@ -1,0 +1,15 @@
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 12px;
+    @include extrasmall{
+        margin-left: 0;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.header--logo {
+    font-size: 1.563em;
+}

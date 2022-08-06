@@ -1,0 +1,51 @@
+.headline {
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.813em;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.313em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+
+.headline-logo {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.813em;
+    color: #fff;
+    text-align: center;
+
+    &::before {
+        content: "";
+        border-radius: 50%;
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 25px;
+    }
+
+    &--icon-1::before {
+        background: url(../images/ic-chat.png) center no-repeat, #fff;
+    }
+
+    &--icon-2::before {
+        background: url(../images/ic-pencil.png) center no-repeat, #fff;
+    }
+
+    &--icon-3::before {
+        background: url(../images/ic-crown.png) center no-repeat, #fff;
+    }
+
+    &--icon-4::before {
+        background: url(../images/ic-user.png) center no-repeat, #fff;
+    }
+}
+

@@ -1,0 +1,133 @@
+.content {
+    font-family: $font-open;
+    font-weight: normal;
+    background: $bg-grey;
+
+    @include medium {
+        background: url(../images/content-bg.jpg);
+    }
+
+    &__wrap {
+        @include medium {
+            display: flex;
+        }
+    }
+
+    &__headline {
+        font-size: 1.7em;
+        text-align: center;
+        color: $yellow;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 400;
+
+        @include small {
+            font-size: 39px;
+            margin-top: 7px;
+        }
+
+        @include medium {
+            font-size: 43px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__list {
+        @include small {
+            padding-top: 38px;
+            padding-left: 10px;
+        }
+
+        @include medium {
+            padding-top: 92px;
+        }
+    }
+
+    &__img {
+        margin-bottom: 10px;
+        position: relative;
+
+        @include small {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        &::after {
+            content: "Its 100% Free";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 6%;
+            left: -5%;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: $yellow;
+            color: $white;
+            font-size: 8px;
+            font-family: font-pt;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            @include small {
+                top: 6%;
+                left: -9%;
+                width: 116px;
+                height: 116px;
+                font-size: 15px;
+            }
+
+            @include medium {
+                left: -6%;
+            }
+        }
+
+        &__item {
+            width: 106%;
+            padding-top: 44px;
+
+            @include medium {
+                width: 77%;
+                padding-top: 28px;
+            }
+        }
+    }
+
+    &__item {
+        font-size: 1em;
+        color: $grey;
+        margin-bottom: 10px;
+
+        @include small {
+            font-size: 22px;
+            margin-bottom: 23px;
+        }
+
+        @include medium {
+            position: relative;
+        }
+
+        &::before {
+            content: "";
+            display: inline-block;
+            border-radius: 50%;
+            width: 14px;
+            height: 14px;
+            background: $yellow;
+            margin-right: 5px;
+
+            @include small {
+                margin-right: 20px;
+            }
+
+            @include medium {
+                position: absolute;
+                top: 6px;
+                left: -7%;
+            }
+        }
+    }
+}

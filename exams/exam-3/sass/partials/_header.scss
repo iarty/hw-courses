@@ -1,0 +1,56 @@
+.header {
+    display: flex;
+    flex-direction: column;
+
+    @include medium {
+        background: url(../images/bg-web.png) top center / cover no-repeat;
+        display: block;
+    }
+
+    &__nav__logo {
+        display: block;
+    }
+
+    &__nav {
+        width: 100%;
+
+        @include small {
+            display: flex;
+        }
+
+        @include medium {
+            justify-content: space-between;
+        }
+    }
+
+    &__headline {
+        font-size: 63px;
+        color: $yellow;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 78px;
+        padding-right: 76px;
+    }
+
+    &__subtitle {
+        color: $white;
+        display: block;
+    }
+
+    &__wrap {
+        @include medium {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 50px;
+            padding-bottom: 118px;
+        }
+    }
+
+    &__txt {
+        font-size: 13px;
+        text-transform: uppercase;
+        color: $white;
+        padding-top: 51px;
+        padding-right: 170px;
+    }
+}

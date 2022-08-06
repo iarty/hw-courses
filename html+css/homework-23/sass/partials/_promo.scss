@@ -1,0 +1,22 @@
+.promo {
+    background: url(../images/promo.jpg) top center / cover no-repeat;
+    box-shadow: inset 0px 5px 7px -2px rgba(0, 0, 0, 0.6);
+
+    &__info {
+        padding: percentage(98px/960px) 0 percentage(227px/960px) 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__headline {
+        font-family: $font-b;
+        padding: 6px 10px 9px 14px;
+        margin-bottom: 2px;
+        background: rgba(0, 0, 0, 0.5);
+        font-weight: 700;
+        font-size: 1.714em;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+}

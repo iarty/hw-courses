@@ -1,0 +1,9 @@
+.WatchList {
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  margin-top: 20px;
+  height: 70vh;
+  text-align: center;
+  background: white;
+  overflow-y: scroll;
+}

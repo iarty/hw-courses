@@ -1,0 +1,152 @@
+body {
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #02918c;
+    padding-top: 10px;
+}
+
+.wrapper {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.navbar ul {
+    display: flex;
+    flex-flow: row;
+    padding-top: 15px;
+}
+
+.navbar li {
+    list-style-type: none;
+    margin: 0 40px;
+    padding: 5px;
+}
+
+.navbar a {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.promo {
+    background: url(../images/main-pic.jpg) center / cover no-repeat;
+    padding: 230px 100px;
+}
+
+.promo h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 20px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.promo p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 33px;
+    margin: 0;
+    text-align: center;
+    width: 900px;
+}
+
+.know-more {
+    background-color: #cfc91d;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 200px;
+    padding: 15px 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #02918c;
+    font-size: 46px;
+    font-weight: bold;
+    padding-top: 50px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2+p {
+    color: #4e5052;
+    font-size: 16px;
+    line-height: 41px;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 1000px;
+}
+
+.wrapper-content {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.content {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 200px;
+    justify-content: flex-start;
+    margin: 30px;
+    text-align: center;
+    width: 200px;
+    padding-bottom: 50px;
+}
+
+.content h3 {
+    color: #4e5052;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 60px;
+}
+
+.bgimg-1 {
+    background: url(../images/ic-lamp.png) top no-repeat;
+}
+
+.bgimg-2 {
+    background: url(../images/ic-pencil.png) top no-repeat;
+}
+
+.bgimg-3 {
+    background: url(../images/ic-set.png) top no-repeat;
+}
+
+.bgimg-4 {
+    background: url(../images/ic-laptop.png) top no-repeat;
+}
+
+.content p {
+    color: #4e5052;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+footer {
+    background-color: #000;
+    padding: 20px;
+}
+
+footer p {
+    color: #7e8287;
+    font-size: 12px;
+    margin-right: 160px;
+    text-align: end;
+    text-transform: uppercase;
+}

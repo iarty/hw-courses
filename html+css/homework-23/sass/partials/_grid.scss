@@ -1,0 +1,54 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+@mixin large-g {
+    @media screen and (min-width:1024px) {
+        @content
+    }
+}
+
+@mixin medium-g {
+    @media screen and (min-width:780px) {
+        @content
+    }
+}
+
+@mixin small-g {
+    @media screen and (min-width:450px) {
+        @content
+    }
+}
+
+@include small-g {
+    @for $i from 1 through 12 {
+        $w: 100% * $i / 12;
+
+        .col-sm-#{$i} {
+            width:$w;
+        }
+    }
+}
+
+@include medium-g {
+    @for $i from 1 through 12 {
+        $w: 100% * $i / 12;
+
+        .col-md-#{$i} {
+            width:$w;
+        }
+    }
+}
+
+@include large-g {
+    @for $i from 1 through 12 {
+        $w: 100% * $i / 12;
+
+        .col-lg-#{$i} {
+            width:$w;
+        }
+    }
+}

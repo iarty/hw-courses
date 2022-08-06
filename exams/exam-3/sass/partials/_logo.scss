@@ -1,0 +1,38 @@
+.logo {
+    display: inline-block;
+    font-size: 0.950em;
+    color: $white;
+    text-transform: uppercase;
+    font-family: $font-lucida;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.58);
+    padding: 20px;
+
+    @include small {
+        font-size: 20px;
+        padding: 15px 20px 17px 12px;
+    }
+
+    @include medium {
+        font-size: 41px;
+        padding: 23px 9px 18px 20px;
+    }
+
+    &--bg {
+        background: $bg-logo;
+
+        @include medium {
+            background: transparent;
+        }
+    }
+
+    &:before {
+        content: "";
+        background: url(../images/logo.png) left center no-repeat;
+        padding: 14px 0 10px 46px;
+
+        @include medium {
+            background: url(../images/logo-web.png) left center no-repeat;
+            padding: 20px 0 15px 85px;
+        }
+    }
+}

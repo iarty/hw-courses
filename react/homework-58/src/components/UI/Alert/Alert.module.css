@@ -1,0 +1,46 @@
+.Alert {
+  padding: 20px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 200;
+  transform: translateX(0px);
+  transition: transform .3s ease-out;
+}
+
+.Closebtn {
+  margin-left: 15px;
+  color: rgb(114, 110, 110);
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.Closebtn:hover {
+  color: black;
+}
+
+.Danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.Warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.Success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.Primary {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+}

@@ -1,0 +1,79 @@
+.header {
+    &__social {
+        text-align: right;
+    }
+
+    .social {
+        background: url(../images/bg.png) repeat-x;
+
+        &__wrap {
+            padding: 13px 0;
+        }
+
+        %icon {
+            display: inline-block;
+            width: 28px;
+            height: 16px;
+        }
+
+        @each $icon in twitter,
+        facebook,
+        dribbble,
+        rss {
+            .social__#{$icon} {
+                background: url(../images/#{$icon}.png) 50% no-repeat;
+                @extend %icon;
+            }
+        }
+    }
+
+    &__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 31px 14px 9px;
+
+        @include small {
+            flex-direction: column;
+            padding-right: 0;
+        }
+
+        .logo {
+            display: block;
+            font-family: $font-b;
+            font-size: 1.714em;
+            color: $lblack;
+
+            @include small {
+                margin-bottom: 20px;
+            }
+
+            &::before {
+                content: "";
+                background: url(../images/logo.png) left center no-repeat;
+                padding: 10px 0 10px 43px;
+            }
+
+            span {
+                color: $red;
+            }
+        }
+
+        .navigation {
+            &__item {
+                display: inline-block;
+            }
+
+            &__link {
+                color: $black;
+                font-size: 0.929em;
+                text-transform: uppercase;
+                margin-right: 20px;
+
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+}

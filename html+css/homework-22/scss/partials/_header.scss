@@ -1,0 +1,37 @@
+.top-page {
+    min-height: 600px;
+    background: url(../images/main.jpg) 0 50% / cover no-repeat, $daqua;
+
+    .header {
+        padding: 19px 15px 22px 15px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid $color-bord;
+        border-top: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include extrasmall {
+            display: block;
+            text-align: center;
+        }
+
+        &__headline {
+            font-size: 2.563em;
+            letter-spacing: 4px;
+            word-spacing: 5px;
+            padding-top: 11.8%;
+
+            @include small {
+                padding-top: 40%;
+            }
+        }
+
+        &__subtitle {
+            font-size: 1.938em;
+            margin-top: 19px;
+            letter-spacing: 4px;
+            word-spacing: 8px;
+        }
+    }
+}

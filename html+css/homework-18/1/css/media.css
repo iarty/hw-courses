@@ -1,0 +1,108 @@
+@media screen and (min-width: 700px) {
+    input.menu:checked~ul {
+        display: flex;
+    }
+
+    .main-nav {
+        font-size: 24px;
+        overflow: visible;
+    }
+
+    .main-nav label.menu {
+        display: none;
+    }
+
+    input.submenu:checked~ul {
+        display: none;
+    }
+
+    input.submenu:checked~a {
+        background: #52bbde;
+    }
+
+    input.submenu:checked+a>.arrow:after {
+        transform: rotate(180deg);
+    }
+
+    .main-nav>ul {
+        display: flex;
+        justify-content: flex-start;
+        max-height: 5000px;
+        width: 100%;
+        background: #52bbde;
+    }
+
+    .main-nav li:hover a {
+        background: #4292ad;
+    }
+
+    .main-nav>ul li:after {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 40px;
+        position: absolute;
+        background: linear-gradient(to right, rgba(68, 163, 191, 1) 0%, rgba(41, 137, 216, 1) 50%, rgba(117, 201, 229, 1) 50%, rgba(117, 201, 229, 1) 100%);
+        top: 10px;
+        right: 8px;
+    }
+
+    .main-nav li:hover>ul {
+        display: block;
+        position: absolute;
+        max-height: 5000px;
+        transition: max-height 2s ease-in;
+        left: 0;
+        bottom: 0;
+        transform: translateY(100%);
+    }
+
+    .main-nav li ul li a:hover {
+        background: #61a5bc;
+        color: #204552;
+        font-weight: 400;
+    }
+
+    .arrow {
+        right: 0;
+        top: 0;
+    }
+
+    .main-nav li:hover input.submenu:checked+a>.arrow:after,
+    .main-nav li:hover .arrow:after {
+        transform: rotate(360deg);
+    }
+
+    .main-nav li:hover::after {
+        width: 0;
+    }
+
+    .main-nav [type="checkbox"],
+    .main-nav label.submenu {
+        display: none;
+    }
+
+    .main-nav>ul li a {
+        padding: 15px 29px 18px 21px;
+    }
+
+    .main-nav>ul li ul a {
+        padding: 16px 0 3px 20px;
+        text-align: left;
+        min-width: 250px;
+    }
+
+    .main-nav>ul li ul {
+        padding-bottom: 15px;
+    }
+
+    .main-nav>ul li ul li:after {
+        width: 0;
+    }
+
+    .main-nav>ul li ul li:last-child a {
+        /* padding: 16px 0 17px 20px; */
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+}

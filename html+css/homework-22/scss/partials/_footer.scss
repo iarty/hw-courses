@@ -1,0 +1,91 @@
+.footer {
+    background: $aqua;
+    font-family: $font-s;
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 24px;
+
+        @include extraextrasmall {
+            flex-direction: column;
+        }
+
+        &__email {
+            margin-right: 15px;
+
+            @include extraextrasmall {
+                margin-right: 0;
+            }
+        }
+
+        &__social {
+            display: flex;
+            flex-direction: row;
+
+            @include extraextrasmall {
+                margin: 10px 0;
+            }
+        }
+
+        &__phone {
+            margin-left: 15px;
+
+            @include extraextrasmall {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .link {
+        font-size: 0.938em;
+        color: #fff;
+
+        &--yellow {
+            color: $yellow;
+        }
+    }
+
+    .social {
+        &__icon {
+            margin: 0 5px;
+
+            &--icon-1:after {
+                content: "";
+                background: url(../images/fb.png) 50% no-repeat, #fff;
+                height: 36px;
+                width: 36px;
+                display: block;
+                border-radius: 50%;
+            }
+
+            &--icon-2:after {
+                content: "";
+                background: url(../images/tw.png) 50% no-repeat, #fff;
+                height: 36px;
+                width: 36px;
+                display: block;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &__hr {
+        width: 20%;
+        opacity: 0.2;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        color: #fff;
+
+        @include extrasmall {
+            text-align: center;
+        }
+    }
+
+}

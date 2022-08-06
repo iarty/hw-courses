@@ -1,0 +1,16 @@
+.navigation {
+    font-size: 1.063em;
+
+    &__item {
+        display: inline-block;
+        padding: 0 17px;
+
+        @include extraextrasmall {
+            padding: 0 10px;
+        }
+    }
+
+    &__link {
+        color: #fff;
+    }
+}

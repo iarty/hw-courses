@@ -1,0 +1,192 @@
+body {
+    background-color: #fff;
+    box-sizing: border-box;
+    color: #5c5c5c;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.3;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0
+}
+
+.header {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 998px;
+    padding: 0 20px;
+}
+
+.logo {
+    background: url(../images/logo.png) left top no-repeat;
+    color: #424242;
+    font-size: 37px;
+    padding: 0 0 10px 75px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar {
+    padding: 25px 0 20px 0;
+    text-align: center;
+}
+
+.navbar a {
+    color: #424242;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.main-img {
+    background: url(../images/main-pic.jpg) center / cover no-repeat;
+    padding: 150px 0 260px 0;
+}
+
+.main-img h1 {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+}
+
+.main-img span {
+    display: block;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.btn {
+    background-color: #f8cd53;
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    display: block;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.txt {
+    color: #424242;
+    font-size: 36px;
+    padding: 80px 0 60px 0;
+    text-align: center;
+}
+
+.txt span {
+    display: block;
+    font-size: 20px;
+}
+
+.wrapper-services {
+    font-size: 0;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.services {
+    box-sizing: border-box;
+    color: #5c5c5c;
+    display: inline-block;
+    font-size: 13px;
+    padding: 10px;
+    width: 33.33%;
+}
+
+.services-link {
+    color: #424242;
+    display: block;
+    font-size: 22px;
+    padding-top: 110px;
+    text-decoration: none;
+}
+
+.bgimg-1 {
+    background: url(../images/ic-hand.png) center top no-repeat;
+}
+
+.bgimg-2 {
+    background: url(../images/ic-book.png) center top no-repeat;
+}
+
+.bgimg-3 {
+    background: url(../images/ic-comment.png) center top no-repeat;
+}
+
+footer {
+    background-color: #515151;
+    padding: 20px;
+}
+
+footer p {
+    color: #cecece;
+    margin-right: 160px;
+    tab-size: 14px;
+    text-align: end;
+}
+
+.bgcl {
+    background-color: #f3f3f3;
+    padding-bottom: 50px;
+}
+
+.wrapper-content {
+    background-color: #fff;
+    border-radius: 3px;
+    font-size: 0;
+    padding-bottom: 40px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #424242;
+}
+
+.content-img-1 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+}
+
+.content-img-2 {
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    width: 40%;
+}
+
+.image-size {
+    max-width: 100%;
+}
+
+.content-txt-1 {
+    display: inline-block;
+    font-size: 13px;
+    text-align: left;
+    vertical-align: middle;
+    width: 60%;
+}
+
+.content-txt-2 {
+    display: inline-block;
+    font-size: 13px;
+    text-align: right;
+    vertical-align: middle;
+    width: 60%;
+}
+
+.fix {
+    padding-top: 30px;
+}

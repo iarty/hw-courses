@@ -1,0 +1,61 @@
+.footer {
+    box-shadow: 0px -3px 4px 0px rgba(0, 0, 0, 0.7);
+    background: $bg-grey;
+    text-align: center;
+
+    &__wrap {
+        @include small {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 6px;
+            padding-bottom: 8px;
+        }
+
+        @include medium {
+            margin-left: 86px;
+        }
+
+    }
+
+    &__logo {
+        text-align: center;
+
+        @include small {
+            font-size: 17px;
+        }
+
+        @include medium {
+            &:before {
+                content: "";
+                background: url(../images/footer-logo.png) left center no-repeat;
+                padding: 14px 0 10px 57px;
+            }
+            padding-top: 13px;
+            padding-bottom: 20px;
+            font-size: 29px;
+        }
+    }
+
+    &__copyright {
+        font-size: 1em;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 20px;
+        color: $white;
+
+        @include small {
+            padding-bottom: 0;
+            font-size: 17px;
+            padding-right: 13px;
+        }
+
+        @include medium {
+            margin-right: 64px;
+        }
+    }
+
+    &__link {
+        color: $white;
+    }
+}

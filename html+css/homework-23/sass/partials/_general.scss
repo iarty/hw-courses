@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: $font-r;
+    background: $white;
+    color: $white;
+    font-size: 14px;
+
+    @include medium {
+        font-size: 13px;
+    }
+
+    @inclide small {
+        font-size: 12px;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+form,
+h1,
+h2,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: $mwidth;
+    margin: 0 auto;
+    padding: 0 10px;
+}

@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+form,
+h1,
+h2,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.bg {
+    background: url(../images/bg.jpg) 50% / cover no-repeat;
+    width: 100%;
+    padding-bottom: 37%;
+}
+
+.main-nav {
+    padding: 25px 0;
+    background: #76c7c0;
+}
+
+.main-nav input[type="checkbox"],
+.main-nav label {
+    display: none;
+}
+
+.main-nav-inner {
+    text-align: center;
+}
+
+.main-nav-inner li {
+    margin-right: 23px;
+    display: inline-block;
+}
+
+.main-nav__item a {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    padding: 8px 10px 7px 10px;
+}
+
+.main-nav li {
+    position: relative;
+}
+
+.submenu a {
+    padding: 8px 18px 7px 30px;
+}
+
+.submenu a:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 4px 0 4px;
+    border-color: #ffffff transparent transparent transparent;
+    position: absolute;
+    top: 40%;
+    left: 14px;
+}
+
+.main-nav__item:hover>.submenu-inner a:before {
+    border-color: transparent;
+}
+
+.main-nav li:hover {
+    background: #e8645a;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px 0px #e2534b;
+}
+
+.submenu-inner {
+    display: none;
+    padding-top: 14px;
+}
+
+.main-nav li:hover .submenu-inner li:hover a {
+    background: #eb8c85;
+}
+
+.main-nav li:hover .submenu-inner {
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    text-align: left;
+}
+
+.main-nav li:hover .submenu-inner a {
+    padding: 5px 33px 10px 8px;
+    border-radius: 3px;
+    margin-top: 5px;
+    background: #e5655d;
+    text-transform: none;
+    font-weight: 600;
+}
+
+.main-nav li:hover ul li {
+    margin-right: 0;
+}
+
+.submenu-inner ul {
+    display: block;
+    background: #e2534b;
+    min-width: 200px;
+    border-radius: 5px;
+    position: relative;
+    padding: 1px 5px 5px 5px;
+}
+
+.submenu-inner ul:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 6px 6px;
+    border-color: transparent transparent #e2534b transparent;
+    top: -6px;
+    left: 12px;
+    position: absolute;
+}
+
+.submenu-inner ul li {
+    white-space: nowrap;
+}

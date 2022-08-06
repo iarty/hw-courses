@@ -1,0 +1,4 @@
+export const FETCH_THREAD_SUCCESS = "FETCH_THREAD_SUCCESS";
+export const SET_ERROR = "SET_ERROR";
+export const SET_LOADING = "SET_LOADING";
+export const POST_SUCCESS = "POST_SUCCESS";

@@ -1,0 +1,48 @@
+@mixin large {
+    @media screen and (max-width:1024px) {
+        @content
+    }
+}
+
+@mixin medium {
+    @media screen and (max-width:780px) {
+        @content
+    }
+}
+
+@mixin small {
+    @media screen and (max-width:450px) {
+        @content
+    }
+}
+
+@mixin posIcon($n, $p, $j, $k) {
+    @for $i from 1 through $n {
+        $pozY: 0;
+        $pozX: 0;
+
+        @if $i <=8 {
+            $pozX: ($i - 1)*(-38px);
+
+        }
+
+        @if $i>8 {
+            $j: $j + 1;
+            $pozX: 0;
+            $pozY: -39px;
+            $pozX: ($j - 1)*(-38px);
+        }
+
+        @if $i>16 {
+            $k: $k + 1;
+            $pozX: 0;
+            $pozY: -78px;
+            $pozX: ($k - 1)*(-38px);
+        }
+
+        .social-media__#{$i} {
+            background-position: $pozX $pozY;
+            margin: 0 $p $p 0;
+        }
+    }
+}

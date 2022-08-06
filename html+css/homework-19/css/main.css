@@ -1,0 +1,165 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.box {
+    border: 1px solid red;
+}
+
+.header {
+    background: #5bbc2e;
+
+}
+
+.green {
+    background: #5bbc2e;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.promo {
+    background: url(../images/main-pic.jpg) 50% 0 / cover no-repeat;
+    min-height: 512px;
+}
+
+.headline {
+    font-size: 48px;
+    font-weight: 800;
+    color: #5bbc2e;
+    padding: 0 16%;
+    text-align: center;
+}
+
+.headline span {
+    color: #000;
+}
+
+.services-block-txt {
+    padding: 0 15%;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.services-icon {
+    font-size: 48px;
+    color: #5bbc2e;
+}
+
+.services-headline {
+    font-size: 14px;
+    font-weight: 600;
+    color: #5bbc2e;
+}
+
+.services-item-txt {
+    font-size: 12px;
+    font-family: arial, serif;
+}
+
+.bg-gray {
+    background: #f9f9f9;
+}
+
+.job-headline {
+    font-weight: 800;
+    font-size: 30px;
+    color: #8d8d8d;
+    padding: 0 10%;
+}
+
+.job-headline span {
+    color: #5bbc2e;
+}
+
+.job-txt {
+    font-weight: 500;
+    font-size: 14px;
+    color: #767575;
+    padding: 0 10%;
+}
+
+.work-icon {
+    font-size: 14px;
+    color: #5bbc2e;
+}
+
+.job-list li {
+    list-style-type: none;
+}
+
+.purple {
+    background: #c42fc9;
+    border-color: #c42fc9;
+}
+
+.purple:hover {
+    background: #9d27a1;
+    border-color: #9d27a1;
+}
+
+.purple:not(:disabled):not(.disabled):active {
+    background: #b420b9;
+    border-color: #c42fc9;
+    box-shadow: 0 0 0 0.2rem rgba(196, 47, 201, .5)
+}
+
+.purple:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(196, 47, 201, .5)
+}
+
+.purple:focus {
+    box-shadow: 0 0 0 0.2rem rgba(196, 47, 201, .5)
+}
+
+.yellow {
+    color: #fff;
+}
+
+.yellow:hover {
+    color: #fff;
+}
+
+.yellow:not(:disabled):not(.disabled):active {
+    color: #fff;
+}
+
+.yellow:focus {
+    color: #fff;
+}
+
+.gallery-headline {
+    color: #8d8d8d;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.gallery-headline span {
+    color: #5bbc2e;
+}
+
+.border-none {
+    border-radius: 0;
+}
+
+.btn {
+    padding: 5px 30px;
+}
+
+.card p {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.footer-copyright {
+    font-weight: 500;
+    color: #e0e0e0;
+    font-size: 11px;
+}
+
+.footer {
+    background: #141414;
+}

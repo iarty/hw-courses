@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mdb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="modal fade" id="pokemonInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-info" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="heading lead">Pokemon Info</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">&times;</span>
+                    </button>
+                </div>
+                <div id="pokemonModal" class="modal-body row justify-content-center mx-3">
+                    <div class="col-3 text-center">
+                        <img src="" class="rounded-circle img-fluid" width="150px" height="150px" id="pokemonAvatar"
+                            alt="Pokemon avatar">
+                        <div style="height: 10px"></div>
+                        <p class="text-muted font-weight-bold" id="pokemonName" style="font-size: 17px"></p>
+                    </div>
+                    <div class="col-9">
+                        <div class="pokemon-info d-flex justify-content-between">
+                            <div>
+                                <p class="font-weight-bold text-light">Weight:</p>
+                                <span class="pokeChar" id="pokemonWeight"></span>
+                                <p class="font-weight-bold text-light">Height:</p>
+                                <span class="pokeChar" id="pokemonHeight"></span>
+                            </div>
+                            <div>
+                                <p class="font-weight-bold text-light" id="pokemonAbil">Abilities:</p>
+                                <div class="pokemonAbillWrap"></div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <p class="font-weight-bold m-0">Type: <p class="font-weight-normal" id="pokemonType">
+                                    </p>
+                            </div>
+                            <div class="col-9 text-center">
+                                <span class="font-weight-bold">Stats:</span>
+                                <div class="stats-wrap"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-end">
+                    <button type="button" class="btn blue-gradient btn-rounded" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="bg">
+            <h1 class="text-center mb-5"></h1>
+            <div class="row align-items-center flex-column">
+                <ol class="pokemon-list font-weight-bold" style="display: none;"></ol>
+                <div class="preloader-wrapper active">
+                    <div class="spinner-layer spinner-blue-only">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="btn-wrap">
+            <a class="prev btn btn-primary btn-sm">prev</a><span class="page">1</span> <a
+                class="next btn btn-primary btn-sm">next</a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/mdb.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

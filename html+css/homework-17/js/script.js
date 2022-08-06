@@ -1,0 +1,31 @@
+$(document).ready(function () {
+    if ($(window).width() >= 399) {
+        $('#main-nav').attr('style', 'display:inline');
+        $('#filter').attr('style', 'display:block');
+    }
+    $('#nav-btn').click(function () {
+        $('#main-nav').slideToggle(700);
+        if ($(this).hasClass('not-active')) {
+            $(this).addClass('is-active').removeClass('not-active');
+        } else {
+            $(this).addClass('not-active').removeClass('is-active');
+        }
+    });
+    $('#filter-btn').click(function () {
+        $('#filter').slideToggle(700);
+        if ($(this).hasClass('not-active')) {
+            $(this).addClass('is-active').removeClass('not-active');
+        } else {
+            $(this).addClass('not-active').removeClass('is-active');
+        }
+    });
+    $(window).resize(function () {
+        if ($(window).width() >= 399) {
+            $('#main-nav').attr('style', 'display:inline');
+            $('#filter').attr('style', 'display:block');
+        } else {
+            $('#main-nav').attr('style', 'display:none');
+            $('#filter').attr('style', 'display:none');
+        }
+    });
+});

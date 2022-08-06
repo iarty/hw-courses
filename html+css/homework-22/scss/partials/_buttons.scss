@@ -1,0 +1,64 @@
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 19px;
+    text-decoration: none;
+    font-family: $font-f;
+    position: relative;
+    font-size: 0.938em;
+    background: #1bbc9b;
+    border: none;
+    cursor: pointer;
+
+
+    &::after {
+        content: "";
+        @include triangle($triangle-color);
+        position: absolute;
+        left: 50%;
+        margin-left: -11px;
+        bottom: -10px;
+    }
+
+    &:hover {
+        outline: 2px solid #fff;
+    }
+
+    &:hover::after {
+        border-color: #fff transparent transparent transparent;
+    }
+
+    &--red {
+        background: $red;
+
+        &::after {
+            border-color: $red transparent transparent transparent;
+        }
+    }
+
+    &--yellow {
+        background: $yellow;
+
+        &::after {
+            border-color: $yellow transparent transparent transparent;
+        }
+    }
+
+    &--aqua {
+        background: $aqua;
+        padding: 10px 25px;
+
+        &::after {
+            border-color: $aqua transparent transparent transparent;
+        }
+
+        &:hover {
+            outline: 2px solid #387d89;
+        }
+
+        &:hover::after {
+            border-color: #387d89 transparent transparent transparent;
+        }
+    }
+}

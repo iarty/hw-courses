@@ -1,0 +1,243 @@
+@media screen and (min-width: 400px) {
+    body {
+        font-size: 12px;
+    }
+
+    .header-nav-btn {
+        display: none;
+    }
+
+    .sidebar-filter__headline {
+        opacity: 1;
+    }
+
+    .sidebar-filter {
+        padding: 15px 0 20px 0;
+    }
+
+    .sidebar-filter__headline {
+        padding: 0 0 13px 0;
+        text-align: center;
+    }
+
+    .sidebar-filter__headline:after {
+        right: 42%;
+        top: 0px;
+    }
+
+
+    .sidebar-nav {
+        position: static;
+    }
+
+    .nav-wrap {
+        display: block;
+    }
+
+    .sidebar-nav ul {
+        padding: 0;
+        background: transparent;
+        width: 100%;
+    }
+
+
+    .sidebar-filter__list input[type="checkbox"] {
+        display: none;
+    }
+
+    .sidebar-filter__list input[type="checkbox"]:checked+label {
+        color: #fff;
+    }
+
+    .sidebar-nav__item {
+        display: inline-block;
+        width: 16%;
+        padding: 10px 0;
+    }
+
+    .sidebar-filter__list label {
+        font-weight: 300;
+        color: #6b7072;
+        font-size: 0.722em;
+        line-height: 1.846;
+        margin-left: 5%;
+    }
+
+    .sidebar-filter__list li:first-child label {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (min-width: 520px) {
+    body {
+        font-size: 14px;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .sidebar {
+        width: 220px;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        box-shadow: 9px 0px 12px 0px rgba(0, 0, 0, 0.76);
+    }
+
+    .sidebar-nav__item {
+        display: inline-block;
+        width: 100%;
+        padding: 15px 0;
+        text-align: right;
+        border-bottom: 1px solid #293034;
+        font-size: 1em;
+    }
+
+    .sidebar-nav__item a {
+        margin-right: 24px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .gallery__item {
+        width: 100%;
+    }
+
+    .sidebar-head h1 {
+        padding: 22px 0 15px 0;
+    }
+
+    .sidebar-filter__list li {
+        display: block;
+    }
+
+    .sidebar-filter {
+        text-align: right;
+    }
+
+    .sidebar-filter__headline {
+        text-align: right;
+        padding: 0 53px 13px 0;
+    }
+
+    .sidebar-filter__headline:after {
+        right: 25px;
+        top: 3px;
+    }
+
+    .sidebar-filter__list {
+        padding: 0 25px 0 0;
+        text-align: right;
+    }
+
+    .gallery__item__overlay__txt {
+        width: 50%;
+    }
+
+    .sidebar-filter__list label {
+        margin-left: 0;
+    }
+
+    .sidebar-foot_copyright {
+        text-align: right;
+        margin: 13px 26px 0 0;
+    }
+
+    .sidebar-social-wrap {
+        width: 100%;
+        margin: 20px 18px 0 auto;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    body {
+        font-size: 16px;
+    }
+
+    .sidebar {
+        width: 280px;
+        position: static;
+        flex-shrink: 0;
+        height: auto;
+    }
+
+    .sidebar-nav__item {
+        padding: 18px 0;
+    }
+
+    .sidebar-head h1 {
+        padding: 32px 0 25px 0;
+    }
+
+    .gallery__item {
+        width: 50%;
+    }
+
+    .gallery__item__overlay:before {
+        top: 65%;
+    }
+
+    .gallery__item__overlay__headline {
+        font-size: 1em;
+    }
+
+    .gallery__item__overlay__txt {
+        font-size: 0.7em;
+        width: 60%;
+    }
+
+    .sidebar-filter {
+        padding: 20px 0 45px 0;
+    }
+
+    .sidebar-foot_copyright {
+        margin: 23px 26px 0 0;
+    }
+
+    .sidebar-social-wrap {
+        width: 79%;
+        margin: 30px 18px 0 auto;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .gallery__item__overlay:before {
+        top: 55%;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    body {
+        font-size: 18px;
+    }
+
+    .sidebar {
+        width: 300px;
+    }
+
+    .sidebar-nav__item {
+        padding: 20px 0 21px 0;
+    }
+
+    .gallery__item {
+        width: 33.333%;
+    }
+
+    .sidebar-filter {
+        padding: 20px 0 26px 0;
+    }
+
+    .gallery__item__overlay:before {
+        top: 55%;
+    }
+
+    .sidebar-foot_copyright {
+        margin: 23px 26px 273px 0;
+    }
+}

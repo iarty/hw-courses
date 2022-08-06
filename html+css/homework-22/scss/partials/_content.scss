@@ -1,0 +1,52 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -10.17%;
+
+    @include extrasmall {
+        display: block;
+    }
+
+    &__item {
+        width: 50%;
+        text-align: center;
+        padding: 59px 0 50px 0;
+
+        @include extrasmall {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        @include extraextrasmall {
+            width: 100%;
+        }
+
+        &--red {
+            background: $red;
+        }
+
+        &--yellow {
+            background: $yellow;
+        }
+
+        &--aqua {
+            background: $triangle-color;
+        }
+
+        &--purple {
+            background: $purple;
+        }
+
+        &__txt {
+            font-family: $font-s;
+            color: #fff;
+            font-size: 1em;
+            line-height: 1.2;
+            text-align: center;
+            width: 60%;
+            margin: 10px auto 0;
+        }
+    }
+
+
+}

@@ -1,0 +1,32 @@
+.square {
+  width: 75px;
+  height: 75px;
+  background: #6e6d6d;
+  cursor: pointer;
+  margin: 2px;
+  position: relative;
+}
+
+.close.square:hover {
+  background: #a1a0a0;
+}
+
+.show {
+  cursor: default;
+  background: white;
+}
+
+.hasItem {
+  background:rgb(189, 236, 189)
+}
+
+.show.hasItem.square::after {
+  content: '\f209';
+  font-family: "Font Awesome 5 Brands";
+  color: rgb(98, 190, 98);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}

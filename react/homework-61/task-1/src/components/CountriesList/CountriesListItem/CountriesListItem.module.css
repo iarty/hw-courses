@@ -1,0 +1,23 @@
+.CountriesListItem {
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-decoration: none;
+  color: #3b3a3a;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.CountriesListItem:hover {
+  background: #cecece;
+}
+
+.CountriesListItem:active {
+  opacity: .5;
+}
+
+.CountriesListItem img {
+  width: 20px;
+}

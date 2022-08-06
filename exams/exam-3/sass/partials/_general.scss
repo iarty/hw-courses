@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 15px;
+    font-family: $font-noto;
+
+    @include small {
+        font-size: 20px;
+    }
+
+}
+
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+form,
+h1,
+h2,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    @include small {
+        max-width: 670px
+    }
+
+    @include medium {
+        max-width: 1220px
+    }
+}
+
+
+.d-none {
+    display: none;
+
+    @include medium {
+        display: block;
+    }
+}
